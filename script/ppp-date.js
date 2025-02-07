@@ -82,7 +82,7 @@ function wareki(x){
         else if(6<date<21){i=20}//大雪
         else if(20<date){i=21}//冬至
     }
-    
+    let kisetu=document.getElementById('kisetu');
     kisetu.innerHTML="月和暦："+wareki+" 二十四節気："+sekki[i]
 
 
