@@ -96,4 +96,7 @@ function time(x){
 function calendar(){
  
 };
-
+setInterval('time(0)',1000);
+window.onload=function(){
+    time(1);
+};
