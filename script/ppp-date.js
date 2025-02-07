@@ -16,6 +16,9 @@ function time(x){
 
     zikan.innerHTML=year+"年"+month+"月"+date+"日 "+youbi+"曜日\n"+apam+"時"+"("+hh+":"+mm+":"+ss+")";
 
+}
+
+function wareki(x){
     let wareki=["睦月","如月","弥生","卯月","皐月","水無月","文月","葉月","長月","神無月","霜月","師走"][month];
     let sekki=["立春","雨水","啓蟄","春分","清明","穀雨","立夏","小満","芒種","夏至","小暑","大暑","立秋","処暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至","小寒","大寒"];
     let i=0;
@@ -79,8 +82,8 @@ function time(x){
         else if(6<date<21){i=20}//大雪
         else if(20<date){i=21}//冬至
     }
+    
     kisetu.innerHTML="月和暦："+wareki+" 二十四節気："+sekki[i]
-
 
 
 
