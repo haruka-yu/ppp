@@ -83,20 +83,13 @@ function time(x){
 
 
 
-    /*
-    2月4日頃
-雨水（うすい）	1月中	2月19日頃
-啓蟄（けいちつ）	2月節	3月5日頃
-春分（しゅんぶん）	2月中	3月21日頃
-清明（せいめい）	3月節	4月5日頃
-穀雨（こくう）	3月中	4月20日頃*/
 
 }
 
 function calendar(){
  
 };
-setInterval('time(0)',1000);
+setInterval("time(0)",1000);
 window.onload=function(){
     time(1);
 };
