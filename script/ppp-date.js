@@ -17,8 +17,6 @@ function time(x){
     zikan.innerHTML=year+"年"+month+"月"+date+"日 "+youbi+"曜日\n"+apam+"時"+"("+hh+":"+mm+":"+ss+")";
     if(x==1 || ((hh==0) && (mm,ss==0))){
         wareki();
-        console.log(month);
-        console.log(date);
     }
 
     function wareki(x){
@@ -86,7 +84,7 @@ function time(x){
             else if(20<date){i=21}//冬至
         }
         let kisetu=document.getElementById('kisetu');
-        kisetu.innerHTML="月和暦："+wareki+" 二十四節気："+sekki[i]
+        kisetu.innerHTML="月和暦："+wareki+"　二十四節気："+sekki[i]
 
 
 

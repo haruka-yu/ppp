@@ -19,7 +19,50 @@ h4{
     height: 75px;
     display: inline-block;
 }
-
+/* ナビゲーションメニュー */
+.nav-menu {
+    background-color: #333; /* メニューの背景色 */
+    color: #fff; /* メニューテキストの色 */
+  }
+  .menu-list {
+    display: flex;
+    justify-content: center; /* メニューアイテムを中央揃えに */
+  }
+  .menu-item {
+    border-left: 1px solid #fff; /* メニューアイテムの左ボーダー */
+    position: relative;
+  }
+  .menu-item:last-child {
+    border-right: 1px solid #fff; /* 最後のメニューアイテムの右ボーダー */
+  }
+  
+  /* メニューアイテムのホバースタイル */
+  .menu-item:hover .drop-menu-list {
+    visibility: visible; /* 下層メニューを表示 */
+  }
+  .menu-item a {
+    align-items: center;
+    color: #fff; /* メニューアイテム内のリンクテキストの色 */
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    text-decoration: none; /* リンクの下線を非表示 */
+    width: 120px;
+  }
+  
+  /* ドロップダウンメニュー */
+  .drop-menu {
+    position: relative;
+  }
+  .drop-menu-list {
+    background-color: #696969; /* ドロップダウンメニューの背景色 */
+    left: 0;
+    position: absolute;
+    top: 100%;
+    visibility: hidden; /* 下層メニューを非表示 */
+    width: max-content;
+    z-index: 1;
+  }
 
 
 
