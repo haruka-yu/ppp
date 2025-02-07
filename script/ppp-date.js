@@ -15,7 +15,11 @@ function time(x){
     let apam=(hh<12)?"午前"+hh:"午後"+(hh-12);
 
     zikan.innerHTML=year+"年"+month+"月"+date+"日 "+youbi+"曜日\n"+apam+"時"+"("+hh+":"+mm+":"+ss+")";
-
+    if(x==1 || ((hh==0) && (mm,ss==0))){
+        wareki();
+        console.log(month);
+        console.log(date);
+    }
 }
 
 function wareki(x){
